@@ -28,7 +28,7 @@ Monday
 > classes 
 > abstract and concrete classes
 > using slots
-q - resolve problem with inherit from ABCMeta
+> resolve problem with inherit from ABCMeta
 - validate types: isinstance, type, int(float())
 > inheritance
 > name mangled members
