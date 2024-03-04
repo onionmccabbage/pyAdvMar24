@@ -20,6 +20,14 @@ class Drawing(Figure):
     # we could write a new __str__ method too
 
 if __name__ == '__main__':
+    # exploring built-ins
+    f = Figure(5,6)
+    d = Drawing(8,3,'blue',.000001)
+    print(Figure.__name__, Figure.__bases__)
+    print(Drawing.__name__, Drawing.__bases__)
+    print(Figure.__doc__)
+    print(__name__)
+
     d1 = Drawing(7, 2, 'green', 0.2)
     d1.line_thickness = 0.05 # this will call the line_thickness setter method
     print(d1, d1.line_thickness) # this will call the line_thickness getter method

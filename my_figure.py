@@ -31,6 +31,10 @@ class Figure: # by default we inherit from 'object' like Figure(object)
         '''the __str__ method will be used whenever this class is printed'''
         return f'The figure has {self.sides} and size is {self.size}' # access the size getter
 
+# CAREFULL - any immediate code will run on import
+# print('hello from the my_figure module')
+print(f'This module is called {__name__}') # this will be '__main__' when run directly, but not when imported
+
 # usually in Python we use the following structure:
 if __name__ == '__main__':
     fig1 = Figure(3, 6) # we now have an instance of our class
