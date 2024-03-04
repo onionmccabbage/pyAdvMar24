@@ -22,18 +22,18 @@ Python code lives in classes (or in functions), in modules, which live in packag
 
 
 Monday
-- intro and welcome
+> intro and welcome
   - what do you currently know
   - what do you want to know
-- classes 
+> classes 
 - abstract and concrete classes
 - validate types: isinstance, type, int(float())
-- inheritance
-- name mangled members
+> inheritance
+> name mangled members
 q comparing classes for equality
   override the __eq__ method to define what you mean by equality
-- if __name__== '__main__'
-- using decorators
+> if __name__== '__main__'
+> using decorators
 - which Python...
 - after lunch review
 - functional programming: map, filter and reduce  
