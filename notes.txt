@@ -5,3 +5,93 @@ Toby Dussek
 
 March 4-7 2024
 
+Repo https://github.com/onionmccabbage/pyAdvMar24
+
+You will need:
+- Python 3.x
+- an editor (e.g. VS Code, PyCharm etc.)
+- internet, with permission to install python libraries (e.g. requests library)
+
+Python code lives in classes (or in functions), in modules, which live in packages (folders)
+
+9:00
+10:30 break
+12:00 lunch
+2:30 break
+...
+
+
+Monday
+- intro and welcome
+  - what do you currently know
+  - what do you want to know
+- classes 
+- abstract and concrete classes
+- validate types: isinstance, type, int(float())
+- inheritance
+- name mangled members
+- if __name__== '__main__'
+- using decorators
+- which Python...
+- after lunch review
+- functional programming: map, filter and reduce  
+- functional programming: parameters
+- comprehensions, generators and yield
+- Loading local and remote data (requests)
+
+Tuesday
+- processing text/json
+  - json.loads() takes JSON and returns Python structure
+  - json.dumps() takes Python structure and returns JSON
+- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+- redirect stdout
+- databases
+  see https://wiki.python.org/moin/DatabaseProgramming
+- other db connections (inc no-sql)
+- Create, Read and Update (and Delete) - CRUD operations
+- populate db with sample data
+- read and nicely format values from the db
+- explore 'typicode' API as a static data source for JSON
+- after lunch review exercise 
+  ask questions, help each other, share code (screen-share)
+- we will be using the 'requests' library
+  (you may come across the urllib.requests which is the old-skool way of doing things)
+- using slots with classes
+
+Wednesday
+- context manager to switch context e.g. for handling data input and output
+- networking server/client (microservices)
+- overview of Flask
+- Testing: (only really works if there is a good spec')
+  - doctest revisited
+  see https://docs.python.org/3/library/doctest.html
+  - unittest
+- after lunch lab exercise
+- pytest see https://docs.pytest.org/
+
+Thursday
+- profiling: timings etc. (cprofile)
+- multithreading, also limits of mutlithreading concurrency
+  - how threads are done
+  - concurrency and resources (lock shared resources)
+- the global Interpreter Lock (GIL) will affect threading performance
+  the classic cpython will be stymied by the GIL
+  jython (Java) an ironpython (.NET) are NOT limited in this way
+- using thread locks
+- using thread events
+- Python has -O to optimize code (especially useful for threading)
+  -O will attempt to optimize the code especially god for threading
+- logging, context mgr, often we log by time-stamp
+- named tuple
+- after lunch review
+- zip, deque, iter etc
+- end of course feedbacks (internal and Neueda)
+
+Course Website
+
+Recordings usr neueda pwd c0nygre
+
+Other Useful Resources
+- https://pynative.com/python-exercises-with-solutions/
+- https://realpython.com/
+- moving from Py2 to Py3 https://docs.python.org/3/howto/pyporting.html
