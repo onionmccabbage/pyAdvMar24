@@ -1,6 +1,7 @@
 from abc import ABCMeta, abstractmethod # these are built in libraries in Python
 
 # we may declare our own abstract class
+# class AbstractShape(ABCMeta):
 class AbstractShape():
     '''Abstraction means we can declare properties and methods we will need in concrete classes'''
     @abstractmethod

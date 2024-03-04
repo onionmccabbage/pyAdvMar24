@@ -14,12 +14,24 @@ class Shape(AbstractShape):
         if type(new_name)==str and new_name !='':
             self.__shape_name = new_name
         else:
-            pass
+            raise TypeError('shape name must be a non-empty string')
 
     def __str__(self):
         return f'This shape is called {self.shape_name}'
     
 if __name__ == '__main__':
-    sq = Shape('square')
-    pe = Shape('Pentagon')
-    print(sq, pe)
+    try:
+        sq = Shape('square')
+        pe = Shape('Pentagon')
+        print(sq, pe)
+        # check the TypeError is raised
+        oops = Shape('') # raise a TypeError
+    # handle specific exceptions first
+    except TypeError as err:
+        print(f'There is a problem: {err}')
+    # handle more generic exceptions
+    except Exception as err:
+        print(f'An unknown exception happened: {err}')
+    finally:
+        # always runs, even if there is an exception
+        print('finally block...')

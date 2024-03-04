@@ -27,6 +27,7 @@ Monday
   - what do you want to know
 > classes 
 - abstract and concrete classes
+q - resolve problem with inherit from ABCMeta
 - validate types: isinstance, type, int(float())
 > inheritance
 > name mangled members
