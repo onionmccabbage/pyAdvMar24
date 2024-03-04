@@ -35,3 +35,6 @@ if __name__ == '__main__':
     finally:
         # always runs, even if there is an exception
         print('finally block...')
+    # unless we use slots, we can add any arbitrary property
+    sq.ooblywoob = 'lunchtime'
+    print(sq.ooblywoob)
