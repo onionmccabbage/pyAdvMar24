@@ -38,7 +38,7 @@ q comparing classes for equality
 > using decorators
 - which Python...
 > after lunch review
-- functional programming: map, filter and reduce  
+> functional programming: map, filter and reduce  
 - functional programming: parameters
 - comprehensions, generators and yield
 - Loading local and remote data (requests)
