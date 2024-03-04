@@ -15,10 +15,10 @@ You will need:
 Python code lives in classes (or in functions), in modules, which live in packages (folders)
 
 9:00
-10:30 break
-12:00 lunch
+10:30 break (15 mins)
+12:00 lunch (1 hr)
 2:30 break
-...
+4:00 end
 
 
 Monday
@@ -30,6 +30,8 @@ Monday
 - validate types: isinstance, type, int(float())
 - inheritance
 - name mangled members
+q comparing classes for equality
+  override the __eq__ method to define what you mean by equality
 - if __name__== '__main__'
 - using decorators
 - which Python...

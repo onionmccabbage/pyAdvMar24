@@ -34,7 +34,12 @@ class Figure:
 # usually in Python we use the following structure:
 if __name__ == '__main__':
     fig1 = Figure(3, 6) # we now have an instance of our class
+    fig2 = Figure(3, 6) 
+    # compare instances
+    print(fig1, fig2, fig1==fig2) # fig1 and fig2 are in different memory so they are NOT the same
     # the print method always calls '__str__'
     print(fig1)
-    fig1.set_num_sides('seven') # oh dear...
+    fig1.set_num_sides(7) # all good
+    fig1.size = 8 # this will call the size setter method
+    fig1.size = 'oops' # this will set the default 4
     print(fig1)
