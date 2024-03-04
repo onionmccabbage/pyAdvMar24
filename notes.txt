@@ -26,7 +26,8 @@ Monday
   - what do you currently know
   - what do you want to know
 > classes 
-- abstract and concrete classes
+> abstract and concrete classes
+> using slots
 q - resolve problem with inherit from ABCMeta
 - validate types: isinstance, type, int(float())
 > inheritance
