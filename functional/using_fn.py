@@ -1,7 +1,6 @@
 # to access 'reduce' we import functools
 import functools
 
-
 def isOdd(n):
     '''return True if odd False if even'''
     return n%2 !=0 # % means integer division (modulo)
@@ -39,3 +38,5 @@ if __name__ == '__main__':
         print(i)
 
 # we also have 'reduce'
+    total = functools.reduce( addThem, range(0, 16) ) # 0-15
+    print(total)
