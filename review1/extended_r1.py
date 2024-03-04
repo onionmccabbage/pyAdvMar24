@@ -12,7 +12,6 @@ class ExtendedNumberFun(NumberFun):
     def __str__(self):
         txt = super().__str__()
         return txt + f'\nToday is {self.today}'
-    
 
 if __name__ == '__main__':
     n = int(float(input('Enter a number: ')))

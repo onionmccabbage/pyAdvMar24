@@ -37,7 +37,7 @@ q comparing classes for equality
 > if __name__== '__main__'
 > using decorators
 - which Python...
-- after lunch review
+> after lunch review
 - functional programming: map, filter and reduce  
 - functional programming: parameters
 - comprehensions, generators and yield
