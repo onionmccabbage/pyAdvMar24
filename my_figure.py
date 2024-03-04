@@ -2,7 +2,7 @@
 # this also allows us to validate the members of the class
 
 # in Python everything is an object (even modules)
-class Figure:
+class Figure: # by default we inherit from 'object' like Figure(object)
     '''It is common practice to document with triple quotes
     This allows new lines
     Figure class will capture sides, size and colour of a shape'''
