@@ -39,11 +39,11 @@ q comparing classes for equality
 - which Python...
 > after lunch review
 > functional programming: map, filter and reduce  
-- functional programming: parameters
-- comprehensions, generators and yield
-- Loading local and remote data (requests)
+> functional programming: parameters
 
 Tuesday
+- comprehensions, generators and yield
+- Loading local and remote data (requests)
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
@@ -60,7 +60,7 @@ Tuesday
   ask questions, help each other, share code (screen-share)
 - we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
-- using slots with classes
+> using slots with classes
 
 Wednesday
 - context manager to switch context e.g. for handling data input and output
