@@ -1,5 +1,5 @@
 class NumberFun():
-    # __slots__ = ('__num',) # a one member tuple
+    __slots__ = ('__num',) # a one member tuple - MUST include trailing comma
     def __init__(self, num):
         self.num = num # use the setter method
     def __str__(self):
