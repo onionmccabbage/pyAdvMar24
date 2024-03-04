@@ -1,4 +1,4 @@
-Advanced Python Review Exercise 1
+Advanced Python Review Exercise 1 (50 minutes - until tea break at 2:30)
 =================================
 In a new module write a class called 'NumberFun' with one property
 This property will be validated as a positive integer
