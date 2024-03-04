@@ -17,7 +17,7 @@ Python code lives in classes (or in functions), in modules, which live in packag
 9:00
 10:30 break (15 mins)
 12:00 lunch (1 hr)
-2:30 break
+2:30 break (15 minutes)
 4:00 end
 
 
@@ -29,7 +29,7 @@ Monday
 > abstract and concrete classes
 > using slots
 > resolve problem with inherit from ABCMeta
-- validate types: isinstance, type, int(float())
+> validate types: isinstance, type, int(float())
 > inheritance
 > name mangled members
 q comparing classes for equality

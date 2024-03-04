@@ -1,4 +1,5 @@
 class NumberFun():
+    # __slots__ = ('__num',) # a one member tuple
     def __init__(self, num):
         self.num = num # use the setter method
     def __str__(self):
@@ -32,7 +33,7 @@ if __name__ == '__main__':
     r = NumberFun(n)
     print(r)
     # can we access name-mangled properties?
-    # print( r.__num ) # fails
-    r.__num = 99 # seems to work, but in fact makes an arbirary new property of 'r'
+    r.__num = 99 # seems to work, but in fact makes an arbitrary new property of 'r'
+    print( r.__num ) # fails
     # remember - everything is an object and all objects always allow arbitrary properties
     print(r.num) # does not actually affect the value of __num

@@ -15,7 +15,6 @@ class Shape(AbstractShape):
             self.__shape_name = new_name
         else:
             raise TypeError('shape name must be a non-empty string')
-
     def __str__(self):
         return f'This shape is called {self.shape_name}'
     
