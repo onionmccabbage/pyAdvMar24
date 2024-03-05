@@ -44,7 +44,7 @@ q comparing classes for equality
 
 Tuesday
 - comprehensions, generators and yield
-- Loading local and remote data (requests)
+> Loading local and remote data (requests)
 - processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
