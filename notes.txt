@@ -34,7 +34,7 @@ Monday
 > validate types: isinstance, type, int(float())
 > inheritance
 > name mangled members
-q comparing classes for equality
+> comparing classes for equality (see compare_equality.py)
   override the __eq__ method to define what you mean by equality
 > if __name__== '__main__'
 > using decorators
@@ -54,12 +54,12 @@ Tuesday
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
   also useful: add 'sqlite viewer' plugin to VSCode
-- other db connections (inc no-sql)
+> other db connections (inc no-sql)
 > Create, Read and Update (and Delete) - CRUD operations
 > populate db with sample data
 > read and nicely format values from the db
 - explore 'typicode' API as a static data source for JSON
-- after lunch review exercise 
+> after lunch review exercise 
   ask questions, help each other, share code (screen-share)
 - we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
