@@ -1,5 +1,5 @@
-Advanced Python Review 2 at least until tea break, probalby a bit after too
-========================
+Advanced Python Review 2 at least until tea break, probably a bit after too
+======================== until 3:05
 This is an opportunity to work with databases, or if you prefer 
 do the whole exercise with file read/write instead of databases
 
