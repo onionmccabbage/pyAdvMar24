@@ -5,9 +5,13 @@ def customRead(w):
     conn = sqlite3.connect('my_db')
     curs = conn.cursor()
     # we can use string formatting to iject values into an SWL statement
+    # we can use LIKE in SQL:
+    # "%{w}" will find anything ending with teh contents of w
+    # "{w}%"  finds anything beggining with the contents of w
+    # "%{w}%" finds anything containing the contents of w
     st = f'''
     SELECT creature, count, cost FROM zoo
-    WHERE creature = "{w}"
+    WHERE creature LIKE "%{w}%"
     '''
     try:
         curs.execute(st)
