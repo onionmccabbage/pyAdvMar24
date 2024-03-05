@@ -53,6 +53,7 @@ Tuesday
 > redirect stdout
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
+  also useful: add 'sqlite viewer' plugin to VSCode
 - other db connections (inc no-sql)
 - Create, Read and Update (and Delete) - CRUD operations
 - populate db with sample data
