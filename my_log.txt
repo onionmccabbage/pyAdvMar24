@@ -1,7 +1,3 @@
-also simplealso simplealso simplealso simplealso simplealso simplealso simplealso simple
-also simple
-also simple
-also simple
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Proin tincidunt aliquet nisl nec tristique. Quisque ac lobortis turpis. 
                 Etiam dapibus rutrum augue sed congue. Duis in finibus augue. Cras vel 
