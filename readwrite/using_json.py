@@ -8,8 +8,17 @@ def makeJson(s):
 
 def retrieve(j):
     '''convert json into a Python data structure'''
-    s = json.loads(j) # convertthe (valid) json text into a python structure
-    return s
+    try:
+        s = json.loads(j) # convert the (valid) json text into a python structure
+        return s
+    except Exception as err:
+        print(err)
+# Valid JSON:
+# ALL text members are in double quotes
+# All numeric and boolean are literal
+# every open element must also close
+# one container for everything
+
 
 if __name__ == '__main__':
     # here is a tuple of  dictionaries
