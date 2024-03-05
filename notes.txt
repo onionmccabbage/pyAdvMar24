@@ -51,13 +51,13 @@ Tuesday
   - json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
 > redirect stdout
-- databases
+> databases
   see https://wiki.python.org/moin/DatabaseProgramming
   also useful: add 'sqlite viewer' plugin to VSCode
 - other db connections (inc no-sql)
-- Create, Read and Update (and Delete) - CRUD operations
-- populate db with sample data
-- read and nicely format values from the db
+> Create, Read and Update (and Delete) - CRUD operations
+> populate db with sample data
+> read and nicely format values from the db
 - explore 'typicode' API as a static data source for JSON
 - after lunch review exercise 
   ask questions, help each other, share code (screen-share)

@@ -1,9 +1,9 @@
-Advanced Python Review 2
+Advanced Python Review 2 at least until tea break, probalby a bit after too
 ========================
 This is an opportunity to work with databases, or if you prefer 
 do the whole exercise with file read/write instead of databases
 
-In a new package, write a module to implement a database (or file) for 'posts'
+In a new package, write a module to implement a database table (or file) for 'posts'
 You may choose to use todos.json from the repository
 Or you can use the following API to copy a very large number of 'posts':
   https://jsonplaceholder.typicode.com/posts
