@@ -45,7 +45,7 @@ q comparing classes for equality
 Tuesday
 - comprehensions, generators and yield
 > Loading local and remote data (requests)
-q - how to convert bytes back to string
+> how to convert bytes back to string
 > processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON

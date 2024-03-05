@@ -28,16 +28,17 @@ def readBytes():
     except Exception as err:
         print(err)
 
-def decodeBytes(b):
-    txt = (b) # there is also an encode
+def decodeBytes(my_b):
+    # decoded_string = byte_string.decode(encoding)
+    txt = my_b.decode() # there is also an encode()
     return txt
 
 if __name__ == '__main__':
     v = range(0,256)
-    b = makeBytes(v) # convert the first 256 text characters into bytes
-    writeBytes(b) # commit our data to a persistent byte file
-    z = readBytes
-    print(b) # this is still bytes
+    my_b = makeBytes(v) # convert the first 256 text characters into bytes
+    writeBytes(my_b) # commit our data to a persistent byte file
+    z = readBytes()
+    print(z) # this is still bytes
     # can we decode the bytes
-    t = decodeBytes(b)
+    t = decodeBytes(my_b[0:60])
     print(type(t), t)
