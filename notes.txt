@@ -50,7 +50,7 @@ Tuesday
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
-- redirect stdout
+> redirect stdout
 - databases
   see https://wiki.python.org/moin/DatabaseProgramming
 - other db connections (inc no-sql)
