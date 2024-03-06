@@ -14,8 +14,14 @@ def server():
         '''we need to keep running until we explicitly choose to break'''
         # if a request has been received, we can unpack the request
         (client, addr) = server.accept()
-        print(f'Request received from {addr}')
-        # break
+        # we typically read the first part of a request
+        buf = client.recv(1024) # just the first 1024 bytes
+
+        print(f'Request received from {addr} {buf}')
+        if buf==b'quit':
+            server.close() # we should tidy up!
+            break
+        
 
 if __name__ == '__main__':
     # start the server

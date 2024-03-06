@@ -9,7 +9,9 @@ def client():
     client.connect(port_t)
 
     # we can send a request to our server
-    client.send('info'.encode()) # all http traffic must be encoded
+    if len(sys.argv) > 1: # ignore member zero, it is always teh module name
+        message = ' '.join(sys.argv[1:]) # ignore member zero
+    client.send(message.encode()) # all http traffic must be encoded
 
 if __name__ == '__main__':
     client()
