@@ -1,0 +1,2 @@
+This will be redirected into a persistent text file
+more context-switched output

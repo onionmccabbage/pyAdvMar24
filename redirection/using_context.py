@@ -11,7 +11,6 @@ def outputRedirect( newOutput ):
     yield # our function will yield the next available object to be sent to the output stream
     sys.stdout = old_stdout # return the standard output stream to what it was before
 
-
 if __name__ == '__main__':
     '''handle context'''
     print('Normal printed output is sent to the console')
