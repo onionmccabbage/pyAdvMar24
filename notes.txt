@@ -73,11 +73,14 @@ Wednesday
 > context manager to switch context e.g. for handling data input and output
 > networking server/client (microservices)
 > overview of Flask
+> immediate mode Python
+  - >>> is the context
+  - any results are immediately show - this uses __repr__ not __str__
 - Testing: (only really works if there is a good spec')
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest
-- after lunch lab exercise
+> after lunch lab exercise
 - pytest see https://docs.pytest.org/
 
 Thursday
