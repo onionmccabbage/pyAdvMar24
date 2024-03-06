@@ -19,6 +19,7 @@ def getData(cat='albums', id=''):
 def writeTofile(buf):
     with open('server_log', 'ab') as fout:
         fout.write(buf)
+        fout.write('\n') # we can choose to add a new line after every entry
 
 def server():
     '''this microservice will listen for request, respond to request
