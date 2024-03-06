@@ -66,12 +66,13 @@ Tuesday
 > using slots with classes
 
 Wednesday
-- conclude our look at requests. we also have POST, PUT, DELETE etc.
-- venv and configuring environments
+> conclude our look at requests. we also have POST, PUT, DELETE etc.
+> venv and configuring environments
 - comprehensions, generators and yield
-- context manager to switch context e.g. for handling data input and output
-- networking server/client (microservices)
-- overview of Flask
+- decorator syntax
+> context manager to switch context e.g. for handling data input and output
+> networking server/client (microservices)
+> overview of Flask
 - Testing: (only really works if there is a good spec')
   - doctest revisited
   see https://docs.python.org/3/library/doctest.html
