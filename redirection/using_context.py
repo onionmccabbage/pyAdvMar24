@@ -8,6 +8,7 @@ def outputRedirect( newOutput ):
     old_stdout = sys.stdout # remember the current standard ouput stream
     sys.stdout = newOutput
     # NB if a function uses 'yield' then it can keep running even after the end
+    # in this case, yield will call the classes provided by @contextmanager __enter__ and __exit__
     yield # our function will yield the next available object to be sent to the output stream
     sys.stdout = old_stdout # return the standard output stream to what it was before
 
@@ -17,6 +18,7 @@ if __name__ == '__main__':
     try:
         with open('my_stream.txt', 'a') as fojb:
             with outputRedirect(fojb):
+                # at this point the context is 'outputRedirect'
                 print('This will be redirected into a persistent text file') # defaults to adding new-line character
                 sys.stdout.write('more context-switched output') # no default termination character
     except Exception as err:
