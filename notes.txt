@@ -69,7 +69,7 @@ Wednesday
 > conclude our look at requests. we also have POST, PUT, DELETE etc.
 > venv and configuring environments
 - comprehensions, generators and yield
-- decorator syntax
+> decorator syntax
 > context manager to switch context e.g. for handling data input and output
 > networking server/client (microservices)
 > overview of Flask
@@ -77,7 +77,7 @@ Wednesday
   - >>> is the context
   - any results are immediately show - this uses __repr__ not __str__
 - Testing: (only really works if there is a good spec')
-  - doctest revisited
+  > doctest revisited
   see https://docs.python.org/3/library/doctest.html
   - unittest
 > after lunch lab exercise
