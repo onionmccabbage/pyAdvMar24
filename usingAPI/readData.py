@@ -29,4 +29,4 @@ if __name__ == '__main__':
     photos = getData()
     print(photos) # we have a (very large) list
     photo = getOnePhoto(3)
-    print(f'Photo 3 is {photo}')
+    print(f'Photo 3 is {photo['title']}')

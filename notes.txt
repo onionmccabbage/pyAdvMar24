@@ -43,13 +43,13 @@ Monday
 > functional programming: parameters
 
 Tuesday
-- comprehensions, generators and yield
 > Loading local and remote data (requests)
 > how to convert bytes back to string
 > processing text/json
   - json.loads() takes JSON and returns Python structure
   - json.dumps() takes Python structure and returns JSON
 > persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+> 'with' operator for clean handling of assets
 > redirect stdout
 > databases
   see https://wiki.python.org/moin/DatabaseProgramming
@@ -58,14 +58,17 @@ Tuesday
 > Create, Read and Update (and Delete) - CRUD operations
 > populate db with sample data
 > read and nicely format values from the db
-- explore 'typicode' API as a static data source for JSON
+> explore 'typicode' API as a static data source for JSON
 > after lunch review exercise 
   ask questions, help each other, share code (screen-share)
-- we will be using the 'requests' library
+> we will be using the 'requests' library
   (you may come across the urllib.requests which is the old-skool way of doing things)
 > using slots with classes
 
 Wednesday
+- conclude our look at requests
+- venv and configuring environments
+- comprehensions, generators and yield
 - context manager to switch context e.g. for handling data input and output
 - networking server/client (microservices)
 - overview of Flask
