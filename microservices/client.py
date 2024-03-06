@@ -12,6 +12,10 @@ def client():
     if len(sys.argv) > 1: # ignore member zero, it is always teh module name
         message = ' '.join(sys.argv[1:]) # ignore member zero
     client.send(message.encode()) # all http traffic must be encoded
+    # we may get a response from the server
+    data = client.recv(1024)
+    print(f'client received {data}')
+    client.close()
 
 if __name__ == '__main__':
     client()

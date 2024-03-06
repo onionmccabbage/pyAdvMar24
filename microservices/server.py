@@ -9,6 +9,7 @@ def server():
     server.bind(port_t) # bind the socket to our IP settings
     # we can ask our server to listen
     server.listen()
+    print(f'Server is listening on {port_t[0]} port {port_t[1]}')
     # we need a run loop
     while True:
         '''we need to keep running until we explicitly choose to break'''
@@ -21,7 +22,10 @@ def server():
         if buf==b'quit':
             server.close() # we should tidy up!
             break
-        
+        # we may choose to respond to the client
+        client.send( buf.upper()) # respond with an upper-case version of the request
+        client.close() # tidy up - release resource
+
 
 if __name__ == '__main__':
     # start the server
