@@ -1,4 +1,5 @@
 from flask import Flask # may need to python -m pip install flask
+import requests
 
 # for small microservices, build your own
 # for medium server use flask
@@ -34,9 +35,22 @@ def al():
     return 'the correct spelling is aluminium'
 
 # we can access any parts of the RESTful url
+@app.route('/zoo')
+@app.route('/zoo/<creature>')
+@app.route('/zoo/<creature>/<count>') # the <> will be used as URL parameters
+def zoo(creature='Elk', count=1): # pass in any expected URL parameters, with optional defaults
+    r = f'We are looking at {creature}. There are {count} {creature}'    
+    return r
 
-
-
+# our microservice can be a proxy for other microservices, databases, API end point etc.
+@app.route('/json')
+@app.route('/json/<cat>')
+@app.route('/json/<cat>/<id>')
+def json(cat='users', id=1):
+    # make a request to the API end point
+    res = requests.get(f'https://jsonplaceholder.typicode.com/{cat}/{id}')
+    res_j = res.json()
+    return res_j
 
 if __name__ == '__main__':
     app.run() # start the Flask server in a run loop
