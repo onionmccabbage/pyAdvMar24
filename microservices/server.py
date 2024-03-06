@@ -1,5 +1,16 @@
 import socket
 import sys
+import datetime
+
+def writreToFile(data, filename):
+    '''we can log activity to a file'''
+    ds = datetime.date()
+    try:
+        with open(filename, 'a') as fout:
+            fout.write(f'on {ds} received {data}\n')
+            # with will close the file access object when done
+    except Exception as err:
+        print(err)
 
 def server():
     '''this microservice will listen for requests and respond
@@ -10,6 +21,7 @@ def server():
     # we can ask our server to listen
     server.listen()
     print(f'Server is listening on {port_t[0]} port {port_t[1]}')
+    filename = 'serverlog.txt' # this could be dynamically generated
     # we need a run loop
     while True:
         '''we need to keep running until we explicitly choose to break'''
@@ -17,7 +29,7 @@ def server():
         (client, addr) = server.accept()
         # we typically read the first part of a request
         buf = client.recv(1024) # just the first 1024 bytes
-
+        writreToFile(f'{buf}', filename)
         print(f'Request received from {addr} {buf}')
         if buf==b'quit':
             server.close() # we should tidy up!
