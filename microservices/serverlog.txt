@@ -1,0 +1,4 @@
+on 2024-03-06 09:22:27.555416 received b'data'
+on 2024-03-06 09:22:33.312661 received b'coffee'
+on 2024-03-06 09:22:41.549942 received b'a ri ae;irg ro;i aer JRGO;IAJERG;AEIJRG IJAER'
+on 2024-03-06 09:22:48.775207 received b'quit'
