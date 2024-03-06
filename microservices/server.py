@@ -1,10 +1,10 @@
 import socket
 import sys
-import datetime
+from datetime import datetime
 
 def writreToFile(data, filename):
     '''we can log activity to a file'''
-    ds = datetime.datetime.now()
+    ds = datetime.now() # or datetime.datetime.now()
     try:
         with open(filename, 'a') as fout:
             fout.write(f'on {ds} received {data}\n')
@@ -21,6 +21,7 @@ def server():
     # we can ask our server to listen
     server.listen(4) # backlog up to 4 clients
     print(f'Server is listening on {port_t[0]} port {port_t[1]}')
+    # we  could inject a filename as a sys.argv
     filename = 'serverlog.txt' # this could be dynamically generated
     # we need a run loop
     while True:
