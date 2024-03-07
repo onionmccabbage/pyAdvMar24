@@ -7,7 +7,7 @@ class MyClass(Thread):
     '''Any class may be invoked as a thread, but it is easiest to inherit from Thread'''
     def __init__(self, n, t):
         # we use 'Thread' rather than 'super' since Thread will implicitly pass required args
-        Thread.__init__(self): # call the initializer of the parent class
+        Thread.__init__(self) # call the initializer of the parent class
         # super().__init__(group, target, name, args, kwargs, daemon=daemon) # super would mean writing all teh args ourself
         self.n = n # we could validate with @property get/set
         self.t = t
@@ -20,7 +20,7 @@ class MyClass(Thread):
 
 if __name__ == '__main__':
     print('The main thread will invoke some child threads')
-    tA = MyClass('A', True)
+    tA = MyClass('A', True) # this will run on a new thread
     tB = MyClass('B', 'wow')
     tC = MyClass('C', [])
     tD = MyClass('D', (5,4,3,2))
@@ -28,4 +28,8 @@ if __name__ == '__main__':
     tB.start()
     tC.start()
     tD.start()
+    tA.join()
+    tB.join()
+    tC.join()
+    tD.join() # block the main thread until this thread joins
     print('The main thread carries on')
