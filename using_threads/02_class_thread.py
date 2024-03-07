@@ -3,6 +3,10 @@ import time
 import random
 from typing import Mapping
 
+# we can profile any module
+#  python -m cProfile -o prof_out 02_class_thread.py
+# this will generate a profile report
+
 class MyClass(Thread):
     '''Any class may be invoked as a thread, but it is easiest to inherit from Thread'''
     def __init__(self, n, t):
