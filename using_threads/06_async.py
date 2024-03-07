@@ -9,7 +9,7 @@ async def main():
 
 if __name__=='__main__':
     # asyncio.run(main())
-    # or
+    # or (recommended)
     with asyncio.Runner() as runner:
         runner.run(main())
         runner.run(main())

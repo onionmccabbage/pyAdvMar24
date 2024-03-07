@@ -1,10 +1,15 @@
 import asyncio
+from asyncio import StreamReader, StreamWriter
 
-async def handle_echo(reader, writer):
+# be careful data-typing is development only (code hints) - it does NOT affect run-time
+async def handle_echo(reader:StreamReader, writer:StreamWriter):
     data = await reader.read(1024) # this will be a byte string
     message = data.decode()
     addr = writer.get_extra_info('peername')
-    print(f'Received {message!r} from {addr!r}')
+    # we may choose to usse __str__ or __repr__ for printed output
+    # the default uses __str__ or we can say !s to force __str__
+    # if we use !r it forces the print command to use __repr__ instead
+    print(f'Received {message!r} from {addr!r}') # no end-of-line character
     print(f'Send message: {message!r}')
     writer.write(data)
     await writer.drain() # wait for the buffer to empty
