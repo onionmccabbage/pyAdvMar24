@@ -44,3 +44,9 @@ if __name__ == '__main__':
         s.join()
     end = timeit.default_timer()
     print(f'total time: {end-start}')
+
+# When all the threads are complete, the main program will exit
+# If we have one (or more) daemon threads, the daemon will be killed
+# when the main thread is complete
+# This can be dangerous - anything executing on a daemon thread might be lost
+
