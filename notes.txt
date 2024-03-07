@@ -85,6 +85,8 @@ Wednesday
 
 Thursday
 > profiling: timings etc. (cprofile)
+> Any signals fro mthe OS will be handled by the main thread in Python
+  - use the signal library to hook in to OS signal
 > multithreading, also limits of mutlithreading concurrency
   - how threads are done
   - concurrency and resources (lock shared resources)
@@ -96,13 +98,13 @@ Thursday
   the classic cpython will be stymied by the GIL
   jython (Java) an ironpython (.NET) are NOT limited in this way
 > using thread locks
-- using thread events
-- using daemon thread
-- Python has -O to optimize code (especially useful for threading)
-  -O will attempt to optimize the code especially god for threading
+> using thread events
+> using daemon thread
+> Python has -O to optimize code (especially useful for threading and large code-base)
+  -O will attempt to optimize the code especially good for threading
 > logging, context mgr, often we log by time-stamp
 - named tuple
-- after lunch review
+> after lunch review
 - zip, deque, iter etc
 - end of course feedbacks (internal and Neueda)
   https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1500681&OID=513891&Title=Advanced%20Python&Owner=Ankit%20Sayal

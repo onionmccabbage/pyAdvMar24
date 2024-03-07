@@ -1,7 +1,7 @@
 from threading import Thread, Event
 import time
 
-event = Event() # we can use eents to communicate from threads
+event = Event() # we can use events to communicate from threads
 
 class SomeClass:
     def __call__(self, n):
