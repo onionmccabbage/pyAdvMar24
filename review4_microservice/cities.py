@@ -1,1 +1,7 @@
-cities_tup = ('southampton', 'hull', 'bristol', 'watford', 'dublin', 'athlone', 'budapest')
+cities_tup = ('southampton', 
+              'hull', 
+              'bristol', 
+              'watford', 
+              'dublin', 
+              'athlone', 
+              'budapest')

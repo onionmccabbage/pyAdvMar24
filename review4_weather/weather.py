@@ -32,6 +32,7 @@ class Weather():
         # output a nicely formatted weather report
         report  = f'The weather in {self.city} is {self.desc} at {self.temp}C'
         return report
+    # an older way of declaring get/set methods
     city = property(getCity, setCity)
     desc = property(getDesc, setDesc)
     temp = property(getTemp, setTemp)
