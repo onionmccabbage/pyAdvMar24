@@ -68,7 +68,7 @@ Tuesday
 Wednesday
 > conclude our look at requests. we also have POST, PUT, DELETE etc.
 > venv and configuring environments
-- comprehensions, generators and yield
+> comprehensions, generators and yield
 > decorator syntax
 > context manager to switch context e.g. for handling data input and output
 > networking server/client (microservices)
@@ -88,6 +88,7 @@ Thursday
 - multithreading, also limits of mutlithreading concurrency
   - how threads are done
   - concurrency and resources (lock shared resources)
+  - async await
 - which Python...
 - the global Interpreter Lock (GIL) will affect threading performance
   the classic cpython will be stymied by the GIL
@@ -96,13 +97,14 @@ Thursday
 - using thread events
 - Python has -O to optimize code (especially useful for threading)
   -O will attempt to optimize the code especially god for threading
-- logging, context mgr, often we log by time-stamp
+> logging, context mgr, often we log by time-stamp
 - named tuple
 - after lunch review
 - zip, deque, iter etc
 - end of course feedbacks (internal and Neueda)
+  https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1500681&OID=513891&Title=Advanced%20Python&Owner=Ankit%20Sayal
+  https://easyretro.io/publicboard/NTDqkkm6utgJFD9cdBrdb4sI6n72/c4f17960-8b00-4a35-bad9-8e8e5d0a4a53
 
-Course Website
 
 Recordings usr neueda pwd c0nygre
 
