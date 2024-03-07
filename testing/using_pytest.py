@@ -22,11 +22,14 @@ def test_member_access():
 def test_defaults():
     '''make sure the named tuple creates the defaults we expect'''
     t = makeTaskTup()
-    s = makeTaskTup((None, None, False, None))
+    s = makeTaskTup((None, None, True, None))
     assert t==s
 
-
 if __name__ == '__main__': # dunder - double underscore before and after
+    # t1 = makeTaskTup(('finish doing stuff', 'Grace'))
+    # t2 = makeTaskTup(('more stuff', 'floela'))
+    # print(t1, t2)
+
     # here the test results default  to the standard output (terminal)
     # we could use redirection to persist the test results
     # then we could automate result response
