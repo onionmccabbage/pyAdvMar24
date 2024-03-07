@@ -11,7 +11,7 @@ class MyClassB: # implicitly inherit from object
         for i in range(0,10):
             msg += f'thread {n} is sleeping' + '\n' # remember print is i/o bound (slow)
             time.sleep(random.random()*0.1)
-        print(msg) # try to minimize the i/o operations
+        print(msg) # try to minimize the i/o
 
 if __name__ == '__main__':
     cA = MyClassB()
@@ -28,5 +28,5 @@ if __name__ == '__main__':
     for item in threads_l:
         item.join()
     # end = time.time()
-    end = timeit.default_timer()
+    end = timeit.default_timer() # MUCH faster without printing!!!!!
     print(f'total time ({end-start})')
